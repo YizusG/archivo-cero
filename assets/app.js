@@ -1,0 +1,1 @@
+const blocked=document.querySelectorAll('a[href="#"]');blocked.forEach(link=>link.addEventListener('click',e=>e.preventDefault()));document.querySelectorAll('.sector-card').forEach(card=>{card.addEventListener('pointerenter',()=>document.documentElement.style.setProperty('--active-sector',card.dataset.sector||'00'));});
